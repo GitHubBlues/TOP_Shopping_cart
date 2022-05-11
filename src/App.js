@@ -13,13 +13,13 @@ import Checkout from "./Components/checkout.js";
 
 function App () {
    return (
-        <BrowserRouter>
+         <BrowserRouter>
             <Header/>
             <Routes>
-              <Route path="/home" element={<Landing/>}/>
+              <Route path="/" element={<Landing/>}/>
               <Route path="/products" element={<ProductBoard/>}/>
-              <Route path="contact" element={<Contact/>}/>
-              <Route path="checkout" element={<Checkout/>}/>
+              <Route path="/contact" element={<Contact/>}/>
+              <Route path="/checkout" element={<Checkout/>}/>
             </Routes>
         </BrowserRouter>
    );
