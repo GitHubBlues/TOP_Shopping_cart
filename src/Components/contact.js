@@ -2,9 +2,9 @@ import React from "react";
 import { ContactBox,
          IconBox,
          ContactH1,
-         IconItem } from "./ctMain.style.js";
+         IconItem } from "./contact.style.js";
 
-const ContactContainer = ()=> {
+const Contact = ()=> {
      
     const address = "304 East Park Avenue, \r\n" + "Greenborough, Ireland";
     const email = "info@littlepilottoys.com";
@@ -22,4 +22,4 @@ const ContactContainer = ()=> {
     );
 };
 
-export default ContactContainer;
+export default Contact;

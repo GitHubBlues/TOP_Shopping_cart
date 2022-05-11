@@ -4,7 +4,7 @@ import { HeaderContainer,
          HeaderButtonContainer,
          HeaderButton,
          CartIcon
-         } from "./lpHeader.style.js";
+         } from "./header.style.js";
 
 const Header = () => {
     return (

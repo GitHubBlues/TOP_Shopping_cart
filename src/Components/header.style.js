@@ -35,7 +35,6 @@ export const HeaderButton = styled.button`
     width: 100px;
     font-size: large;
     background-color: rgba(255,255,255,0);
-
     font-family: sans-serif;
     font-weight: 700;
     font-size: large;
@@ -45,7 +44,6 @@ export const HeaderButton = styled.button`
     &:hover {
         background-color: rgba(255,255,255,0.15);
     }
-
 `
 
 export const CartIcon = styled.button`

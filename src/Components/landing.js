@@ -7,9 +7,9 @@ import { MainContainer,
          ShopBtn,
          Image,
          ImageContainer
-        } from "./lpMain.style.js"
+        } from "./landing.style.js"
 
-const Main = () => {
+const Landing = () => {
    
    const text2 = "Get ready for takeoff and landing, descending and ascending,";
    const text3 = "cruising, taxing, looping, building, repairing and lots of fun";
@@ -31,4 +31,4 @@ const Main = () => {
    );
 };
 
-export default Main; 
+export default Landing; 

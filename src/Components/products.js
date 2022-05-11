@@ -8,7 +8,7 @@ import { Board,
          ItemDescription,
          ItemPrice,
          ItemBtn,
-         Controls} from "./spMain.style.js";
+         Controls} from "./products.style.js";
 
 const ProductBoard = () => {
     const database = generateToyDB();

@@ -36,5 +36,4 @@ export const IconItem = styled.span`
     font-size: 48px;
     font-family: sans-serif;
     align-items: center;
-    
 `
