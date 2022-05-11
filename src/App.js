@@ -1,10 +1,13 @@
 import React from "react";
-import Header from './Components/lpHeader.js';
+// import Header from './Components/lpHeader.js';
+import ProductBoard from './Components/spMain.js';
 // import Main from './Components/lpMain.js';
+// import ContactContainer from "./Components/ctMain.js";
 // import { LandingPage, 
+            // ContactPage,
 import{
-         ContactPage } from "./App.style.js"
-import ContactContainer from "./Components/ctMain.js";
+         } from "./App.style.js"
+
 
 function App() {
   return (
@@ -12,10 +15,13 @@ function App() {
     //    <Header />
     //    <Main />
     // </LandingPage>
-       <ContactPage>
-           <Header />   
-           <ContactContainer /> 
-       </ContactPage>
+    // <ContactPage>
+    //    <Header />   
+    //    <ContactContainer /> 
+    // </ContactPage>
+      <ProductBoard>
+
+      </ProductBoard>
   );
 }
 
