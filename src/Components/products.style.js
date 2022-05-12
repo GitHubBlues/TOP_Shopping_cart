@@ -3,19 +3,20 @@ import styled from "styled-components";
 export const Board = styled.div`
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid blue;
-
+    margin-top: 10px;
 `
 
 export const Item = styled.div`
     border-radius: 10px;
     box-shadow: 3px 3px 15px 5px grey;
+    background-color: white;
     padding: 20px;
     width: 370px;
     margin: 25px;
 `
 
 export const ItemImageContainer = styled.div`
+
 `
 
 export const ItemImg = styled.img`

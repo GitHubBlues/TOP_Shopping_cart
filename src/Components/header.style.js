@@ -42,7 +42,7 @@ export const HeaderButton = styled.button`
     box-shadow: 0px 0px 8px 3px #C0C0C0;
 
     &:hover {
-        background-color: rgba(255,255,255,0.15);
+        background-color: rgba(240,240,240,0.35);
     }
 `
 
@@ -56,9 +56,9 @@ export const CartIcon = styled.button`
     letter-spacing: 0.5px;
     box-shadow: 0px 0px 8px 3px #C0C0C0;
     border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0);
+    border: 1px solid rgba(240,240,240,0.35);
 
     &:hover {
-        background-color: rgba(255,255,255,0.15);
+        background-color: rgba(230,230,230,0.3);
     }
 `

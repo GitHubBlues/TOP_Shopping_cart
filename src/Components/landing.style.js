@@ -64,7 +64,6 @@ export const ImageContainer = styled.div`
     margin: auto;
     padding: 60px;
     width: 300px;
-   
 `
 
 export const Image = styled.img`
