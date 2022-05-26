@@ -10,6 +10,7 @@ export const Operator = styled.div`
     font-size: 16px;
     font-weight: 700;
     font-family: sans-serif;
+    user-select: none;
     padding: 8px 12px;
     border: 2px solid grey;
     margin: 0px;
@@ -24,6 +25,7 @@ export const Number = styled.div`
     font-size: 16px;
     font-weight: 700;
     font-family: sans-serif;
+    user-select: none;
     padding: 8px 12px;
     border: 2px solid grey;
 `
