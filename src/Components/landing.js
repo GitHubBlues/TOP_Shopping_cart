@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import planePng from "../Assets/Main_Image_cropped2.png";
 import { MainContainer,
          TextContainer,
@@ -21,7 +22,9 @@ const Landing = () => {
                <Textbox>Toys, puzzles, costumes, books and much more</Textbox>
                <Textbox size={ "20px" } weight={ "500" } margin={"5px"}> {text2} </Textbox>
                <Textbox size={ "20px" } weight={ "500" } margin={"30px"} > {text3} </Textbox>
-               <ShopBtn>Goto shop</ShopBtn>
+               <Link style={{textDecoration: 'none'}} to="/products">
+                   <ShopBtn>Go to shop</ShopBtn>
+               </Link>
            </TextContainer>
            <ImageContainer>
                <Image src={planePng} alt="children hanging from plane" width="100%" />

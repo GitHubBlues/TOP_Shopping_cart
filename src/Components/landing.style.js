@@ -36,12 +36,13 @@ export const Textbox = styled.p`
     letter-spacing: 0.5px;
 `
 
-export const ShopBtn = styled.p`
+export const ShopBtn = styled.button`
     display: flex;
     align-items: center; 
     justify-content: center;
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,0);
+    box-shadow: 0px 0px 8px 3px #999999;
     margin: auto 10px;
     margin-top: 30px;
     height: 50px;
@@ -49,10 +50,10 @@ export const ShopBtn = styled.p`
     font-family: sans-serif;
     font-weight: 700;
     font-size: large;
-    background-color: rgba(210, 123, 68, 0.6);
     letter-spacing: 0.5px;
-    box-shadow: 0px 0px 6px 5px #C0C0C0;
-
+    background-color: rgba(210, 123, 68, 0.6);
+    color: black;    
+    
     &:hover {
         background-color: rgba(210, 123, 68, 0.4);
     }
