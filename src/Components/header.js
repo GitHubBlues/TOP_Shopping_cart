@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 import { HeaderContainer,
          HeaderTitle,
@@ -7,42 +8,42 @@ import { HeaderContainer,
          CartIcon
          } from "./header.style.js";
 
-const Header = () => {
-    
-    // let redirect = useNavigate(); 
-
-    // const handleRedirect =(e) => {
-    //     const link = e.target.name;
-    //     if (link==="home"){
-    //         redirect("/home");
-    //     } else if (link==="shop") {
-    //         redirect("/shop");
-    //     } else if (link==="contact") {
-    //         redirect("/contact");
-    //     } else if (link==="cart-outline") {    
-    //         redirect("/checkout");
-    //     }    
-    // };
-
+const Header = ( {quantity} ) => {
+    const ntotal =  quantity;
+    console.log(ntotal);
     return (
         <HeaderContainer>
             <HeaderTitle>The little pilot</HeaderTitle>
             <HeaderButtonContainer>
-                <Link to="/">
-                <HeaderButton>Home</HeaderButton>
+                <Link style={{textDecoration: 'none'}} to="/">
+                    <HeaderButton>Home</HeaderButton>
                 </Link>
-                <Link to="/products">
-                <HeaderButton>Shop</HeaderButton>
+                <Link style={{textDecoration: 'none'}} to="/products">
+                    <HeaderButton>Shop</HeaderButton>
                 </Link>
-                <Link to="/contact">
-                <HeaderButton>Contact</HeaderButton>
+                <Link  style={{textDecoration: 'none'}} to="/contact">
+                    <HeaderButton>Contact</HeaderButton>
                 </Link>
-                <Link to="/checkout">
-                <CartIcon> <ion-icon name="cart-outline" size="large"></ion-icon></CartIcon>
-                </Link>
+
+                    <Link aria-label="Cart" style={{textDecoration: 'none'}} to="/checkout">
+                        <CartIcon > 
+                        { ntotal > 0 &&
+                            <div className="bubble"><div className="items-cart">{ntotal}</div></div>
+                        }    
+                        { ntotal == 0 &&
+                            <div className="no-bubble"><div className="no-items-cart">{ntotal}</div></div>
+                        } 
+                            <ion-icon name="cart-outline" size="large"></ion-icon>
+                        </CartIcon > 
+                    </Link>
+                 
             </HeaderButtonContainer>
         </HeaderContainer>
     );
+};
+
+Header.propTypes = {
+    quantity: PropTypes.number,
 };
 
 export default Header; 
