@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 export const Board = styled.div`
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 10px;
+
 `
 
 export const Item = styled.div`
     border-radius: 10px;
-    box-shadow: 3px 3px 15px 5px grey;
+    box-shadow: 0px 0px 12px 2px grey;
     background-color: white;
     padding: 20px;
     width: 370px;
@@ -20,11 +22,11 @@ export const ItemImageContainer = styled.div`
 `
 
 export const ItemImg = styled.img`
-    /* display: flex; */
     height: 260px;
     width: 320px;
     padding: 25px;
     object-fit: contain;
+    user-drag: none;
 `
 
 export const ItemDescription = styled.p`
