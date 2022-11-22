@@ -15,6 +15,9 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "globals": {
+        "shallow": true
+    },
     "plugins": [
         "react"
     ],
