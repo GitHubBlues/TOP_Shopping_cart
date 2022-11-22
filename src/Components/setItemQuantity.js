@@ -28,7 +28,7 @@ const Quantity = ({ _quantity, _setQuantity, _setNtotal, _itemId }) => {
 
     return(
         <Container>
-            <Operator onClick={handleRemoveItem}>–</Operator>
+            <Operator id={"add_" + id} onClick={handleRemoveItem}>–</Operator>
             <Number>{quantity[ id ]}</Number>
             <Operator onClick={handleAddItem}>+</Operator>
         </Container>
