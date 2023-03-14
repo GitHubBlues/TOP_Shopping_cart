@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import generateToyDB from "./toysDB.js";
+import Popup from "./popup.js";
 import { Item,
          ImageContainer,
          ItemImage,
@@ -21,7 +22,8 @@ const Checkout = ({ _quantity, _setQuantity, _setNtotal}) => {
 
   const clonedQuantity = JSON.parse(JSON.stringify( quantity ));
   const database = generateToyDB();
-  
+  const [showPopup, setShowPopup] = useState( 0 )
+
   function total() {
     const database = generateToyDB();
     let totalPrice = 0;
@@ -45,6 +47,15 @@ function handleRemoveItem(e) {
     setQuantity(clonedQuantity);
     const sum = clonedQuantity.reduce((partialSum, item) => partialSum + item, 0);
     setNtotal(sum);
+};
+
+function  handleShowPopup() {
+  if (showPopup == 0) {
+    setShowPopup(1);
+  } else {
+    setShowPopup(0);
+  }  
+  console.log("do sth")
 };
 
   function checkoutCart() {
@@ -91,7 +102,18 @@ function handleRemoveItem(e) {
                     <div className="total-label">TOTAL </div>  
                     <div className="total-label">€{ total() }</div>  
                   </div>
-                  <Buy>BUY</Buy> 
+                  <div className="flexRow">
+                      { showPopup === 1 &&
+                          <Popup/>
+                      }     
+                      <Buy onClick={() => { handleShowPopup() }}>BUY</Buy> 
+                  </div>    
+                  {/* <div>              
+                  { showPopup === 1 &&
+                      <Popup/>
+                  }
+                  </div>   */}
+
                 </div>              
 
               </div>  

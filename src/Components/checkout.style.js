@@ -86,7 +86,6 @@ export const Buy = styled.button`
     border-radius: 8px;
     border: 1px solid rgba(0,0,0,0);
     box-shadow: 0px 0px 8px 3px #999999;
-    margin: 30px 40px auto auto;
     height: 50px;
     width: 130px;
     font-family: sans-serif;
@@ -94,13 +93,13 @@ export const Buy = styled.button`
     font-size: large;
     letter-spacing: 0.5px;
     background-color: rgba(210, 123, 68, 0.6);
-    color: black;    
+    color: black; 
+    /* margin-left: 20px; */
     
     &:hover {
         background-color: rgba(210, 123, 68, 0.4);
     }
 `
-
 export const NoteEmptyCart = styled.div`
     display: flex;
     justify-content: center;

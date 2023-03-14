@@ -128,3 +128,15 @@ body {
     font-weight: bold;
     margin-left: 60px;
 }
+
+.textMessage {
+    display: flex;
+    margin-right: 30px;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 30px;
+}    
