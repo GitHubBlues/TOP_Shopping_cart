@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TOP_Shopping_cart/static/css/main.97a35ea4.css",
-    "main.js": "/TOP_Shopping_cart/static/js/main.4ea4244c.js",
+    "main.js": "/TOP_Shopping_cart/static/js/main.09d3fd48.js",
     "static/media/Paper.jpg": "/TOP_Shopping_cart/static/media/Paper.ded364093d32ec114cd3.jpg",
     "static/media/Main_Image_cropped2.png": "/TOP_Shopping_cart/static/media/Main_Image_cropped2.ced583bb60b13afa7fca.png",
     "static/media/Lego1.jpg": "/TOP_Shopping_cart/static/media/Lego1.ad2f04e81c73b5ebe525.jpg",
@@ -24,10 +24,10 @@
     "static/media/Mobile.jpg": "/TOP_Shopping_cart/static/media/Mobile.f307ef29300fce9738c6.jpg",
     "index.html": "/TOP_Shopping_cart/index.html",
     "main.97a35ea4.css.map": "/TOP_Shopping_cart/static/css/main.97a35ea4.css.map",
-    "main.4ea4244c.js.map": "/TOP_Shopping_cart/static/js/main.4ea4244c.js.map"
+    "main.09d3fd48.js.map": "/TOP_Shopping_cart/static/js/main.09d3fd48.js.map"
   },
   "entrypoints": [
     "static/css/main.97a35ea4.css",
-    "static/js/main.4ea4244c.js"
+    "static/js/main.09d3fd48.js"
   ]
 }
