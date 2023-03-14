@@ -14,10 +14,10 @@ function App () {
          <BrowserRouter>
             <Header quantity={ ntotal }/>
             <Routes>
-              <Route path="/" element={<Landing/>}/>
               <Route path="/products" element={<ProductBoard _quantity={ quantity } _setQuantity={ setQuantity } _setNtotal={ setNtotal }/> }/>
               <Route path="/contact" element={<Contact/>}/>
               <Route path="/checkout" element={<Checkout _quantity={ quantity } _setQuantity={ setQuantity } _setNtotal={ setNtotal }/>}/>
+              <Route path="/" element={<Landing/>}/>
             </Routes>
         </BrowserRouter>
    );
